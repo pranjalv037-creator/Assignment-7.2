@@ -1,0 +1,194 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.page-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.page-header p {
+    color: #64748b;
+}
+
+/* Pricing Cards using Flexbox */
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 20px 50px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding: 30px 22px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.pricing-card h2 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.price {
+    margin-bottom: 25px;
+    color: #0284c7;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #64748b;
+}
+
+.pricing-card ul {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.pricing-card li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.plan-button {
+    display: inline-block;
+    margin-top: auto;
+    padding: 12px 20px;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.plan-button:hover {
+    background-color: #0369a1;
+}
+
+.featured {
+    border: 2px solid #0284c7;
+    transform: translateY(-8px);
+}
+
+/* Centered Login Form using Flexbox */
+.login-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+    background-color: #dbeafe;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0f172a;
+}
+
+.login-form p {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #64748b;
+}
+
+.login-form label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.login-form input:focus {
+    outline: 2px solid #38bdf8;
+    border-color: #0284c7;
+}
+
+.login-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #0284c7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0369a1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .featured {
+        transform: none;
+    }
+
+    .login-form {
+        padding: 24px;
+    }
+}
